@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="525.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteCustomerFormController">
+   <children>
+      <Pane layoutY="11.0" prefHeight="104.0" prefWidth="520.0">
+         <children>
+            <Rectangle arcHeight="30.0" arcWidth="30.0" height="60.0" layoutX="-45.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="520.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.7962085308056871" startY="0.037914691943127965">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6000000238418579" green="0.19607843458652496" blue="0.4431372582912445" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.6000000238418579" green="0.19607843458652496" blue="0.4431372582912445" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7281879194630873">
+                           <color>
+                              <Color red="0.8784313797950745" green="0.3607843220233917" blue="0.6823529601097107" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8784313797950745" green="0.3607843220233917" blue="0.6823529601097107" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Text fill="WHITE" layoutX="118.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Customer">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="40.0" layoutY="118.0" prefHeight="360.0" prefWidth="830.0">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="360.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="830.0">
+               <effect>
+                  <DropShadow height="38.59" offsetY="3.0" radius="19.527500000000003" width="41.52">
+                     <color>
+                        <Color opacity="0.08396945893764496" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="360.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="830.0" />
+            <JFXButton layoutX="504.0" layoutY="45.0" onAction="#btnSearchOnAction" prefHeight="36.0" prefWidth="156.0" style="-fx-background-color: #fcf2e6; -fx-background-radius: 10; -fx-border-color: #ffb43c; -fx-border-radius: 10; -fx-border-width: 1.2;" text="Search" textFill="#ffb43c">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="154.0" layoutY="124.0" prefHeight="36.0" prefWidth="220.0" text="Name" textFill="#4d4d4d">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="12.0" />
+               </padding>
+            </Label>
+            <Label layoutX="154.0" layoutY="160.0" prefHeight="36.0" prefWidth="220.0" style="-fx-background-color: f8e7f1;" text="Address" textFill="#4d4d4d">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="12.0" />
+               </padding>
+            </Label>
+            <Label layoutX="154.0" layoutY="196.0" prefHeight="36.0" prefWidth="220.0" text="Contact Number" textFill="#4d4d4d">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="12.0" />
+               </padding>
+            </Label>
+            <Label layoutX="154.0" layoutY="232.0" prefHeight="36.0" prefWidth="220.0" style="-fx-background-color: f8e7f1;" text="Date of Birth" textFill="#4d4d4d">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="12.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblName" layoutX="373.0" layoutY="124.0" prefHeight="36.0" prefWidth="277.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="12.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblAddress" layoutX="373.0" layoutY="160.0" prefHeight="36.0" prefWidth="277.0" style="-fx-background-color: f8e7f1;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="12.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblContactNumber" layoutX="373.0" layoutY="196.0" prefHeight="36.0" prefWidth="277.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="12.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblDateOfBirth" layoutX="373.0" layoutY="232.0" prefHeight="36.0" prefWidth="277.0" style="-fx-background-color: f8e7f1;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="12.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtSearch" layoutX="83.0" layoutY="45.0" onKeyPressed="#txtSearchOnKeyPressed" prefHeight="36.0" prefWidth="382.0" promptText="Search by Customer ID" style="-fx-background-color: #fff; -fx-border-color: #ffb43c; -fx-border-radius: 10;">
+               <padding>
+                  <Insets left="16.0" />
+               </padding>
+            </TextField>
+            <JFXButton layoutX="511.0" layoutY="299.0" onAction="#btnDeleteCustomerOnAction" prefHeight="31.0" prefWidth="228.0" style="-fx-background-color: #ffb43c; -fx-background-radius: 10;" text="Delete Customer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

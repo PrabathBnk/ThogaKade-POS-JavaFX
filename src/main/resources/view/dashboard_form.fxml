@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="820.0" prefWidth="1245.0" style="-fx-background-color: #F4F4F4;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="780.0" layoutX="20.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1205.0">
+         <effect>
+            <DropShadow height="38.59" offsetY="2.0" radius="18.795" width="38.59">
+               <color>
+                  <Color opacity="0.09160305559635162" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="780.0" layoutX="20.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1205.0" />
+      <Pane layoutX="599.0" layoutY="450.0" prefHeight="348.0" prefWidth="626.0">
+         <children>
+            <ImageView fitHeight="629.0" fitWidth="790.0" layoutX="-132.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.08;">
+               <image>
+                  <Image url="@../img/Logo%20Grayscale.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="15.0" arcWidth="15.0" fill="DODGERBLUE" height="348.0" layoutX="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="605.0" />
+            <Text layoutX="246.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins;" text="T H O G A K A D E    P O S   S Y S T E M">
+               <font>
+                  <Font name="Segoe UI Light" size="10.0" />
+               </font>
+            </Text>
+            
+         </children>
+         <clip>
+            <Rectangle arcHeight="15.0" arcWidth="15.0" fill="DODGERBLUE" height="348.0" layoutX="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="605.0" />
+         </clip>
+      </Pane>
+      <Pane focusTraversable="true" layoutX="596.0" layoutY="20.0" prefHeight="780.0" prefWidth="629.0" style="-fx-background-radius: 15;">
+         <children>
+            <JFXButton layoutX="178.0" layoutY="420.0" onAction="#btnViewCustomerOnAction" prefHeight="41.0" prefWidth="326.0" style="-fx-background-color: fcf2e6; -fx-background-radius: 12; -fx-border-width: 1; -fx-border-color: #e27a00; -fx-border-radius: 12;" text="View Customer" textFill="#e27a00">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="178.0" layoutY="210.0" onAction="#btnSearchCustomerOnAction" prefHeight="41.0" prefWidth="326.0" style="-fx-background-color: fcf2e6; -fx-background-radius: 12; -fx-border-width: 1; -fx-border-color: #e27a00; -fx-border-radius: 12;" text="Search Customer" textFill="#e27a00">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="178.0" layoutY="280.0" onAction="#btnUpdateCustomerOnAction" prefHeight="41.0" prefWidth="326.0" style="-fx-background-color: fcf2e6; -fx-background-radius: 12; -fx-border-width: 1; -fx-border-color: #e27a00; -fx-border-radius: 12;" text="Update Customer" textFill="#e27a00">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="178.0" layoutY="350.0" onAction="#btnDeleteCustomerOnAction" prefHeight="41.0" prefWidth="326.0" style="-fx-background-color: fcf2e6; -fx-background-radius: 12; -fx-border-width: 1; -fx-border-color: #e27a00; -fx-border-radius: 12;" text="Delete Customer" textFill="#e27a00">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Text fill="#4a4749" layoutX="58.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Management Options" visible="false">
+               <font>
+                  <Font name="Segoe UI Bold" size="33.0" />
+               </font>
+            </Text>
+            <JFXButton layoutX="178.0" layoutY="140.0" onAction="#btnAddCustomerOnAction" prefHeight="41.0" prefWidth="326.0" style="-fx-background-color: fcf2e6; -fx-background-radius: 12; -fx-border-width: 1; -fx-border-color: #e27a00; -fx-border-radius: 12;" text="Add Customer" textFill="#e27a00">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Text fill="#3e3d3d" layoutX="247.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DASHBOARD">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+         </children></Pane>
+      <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="780.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#f5f5f5e7" height="780.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="600.0" />
+            <Pane prefHeight="780.0" prefWidth="600.0" style="-fx-background-radius: 15;">
+               <children>
+                  <Circle fill="#de760041" layoutX="585.0" layoutY="208.0" radius="160.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                     <effect>
+                        <BoxBlur height="230.0" iterations="3" width="255.0" />
+                     </effect>
+                  </Circle>
+                  <Circle fill="#ff844232" layoutX="32.0" layoutY="710.0" radius="160.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                     <effect>
+                        <BoxBlur height="230.0" iterations="3" width="255.0" />
+                     </effect>
+                  </Circle>
+                  <Circle fill="#bf8abf54" layoutX="32.0" layoutY="208.0" radius="220.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                     <effect>
+                        <BoxBlur height="230.0" iterations="3" width="255.0" />
+                     </effect>
+                  </Circle>
+                  <Circle fill="#c23c8a27" layoutX="574.0" layoutY="691.0" radius="170.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                     <effect>
+                        <BoxBlur height="230.0" iterations="3" width="255.0" />
+                     </effect>
+                  </Circle>
+                  <ImageView fitHeight="167.0" fitWidth="178.0" layoutX="206.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Logo%201.png" />
+                     </image></ImageView>
+                  <Text fill="#3e3d3d" layoutX="108.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER">
+                     <font>
+                        <Font name="System Bold" size="49.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="108.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGER">
+                     <font>
+                        <Font name="System Bold" size="65.0" />
+                     </font>
+                     <fill>
+                        <LinearGradient endX="0.8104265402843602" endY="0.6966824644549763">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6000000238418579" green="0.19607843458652496" blue="0.4431372582912445" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.8784313797950745" green="0.3607843220233917" blue="0.6823529601097107" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+                  <Text fill="#898989" layoutX="111.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is the customer manager section of the Thoga Kade System. You can add new customers, update, delete and view existing customers here." wrappingWidth="340.0">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+               <clip>
+                  <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#f5f5f5e7" height="780.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+               </clip>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

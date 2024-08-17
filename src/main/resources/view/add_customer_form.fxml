@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="525.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerFormController">
+   <children>
+      <Pane layoutY="11.0" prefHeight="104.0" prefWidth="520.0">
+         <children>
+            <Rectangle arcHeight="30.0" arcWidth="30.0" height="60.0" layoutX="-45.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="520.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.7962085308056871" startY="0.037914691943127965">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6000000238418579" green="0.19607843458652496" blue="0.4431372582912445" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.6000000238418579" green="0.19607843458652496" blue="0.4431372582912445" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7281879194630873">
+                           <color>
+                              <Color red="0.8784313797950745" green="0.3607843220233917" blue="0.6823529601097107" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8784313797950745" green="0.3607843220233917" blue="0.6823529601097107" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Text fill="WHITE" layoutX="118.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Customer">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="40.0" layoutY="118.0" prefHeight="360.0" prefWidth="830.0">
+         <children>
+            <JFXTextField focusColor="#ffb43c" layoutX="21.0" layoutY="5.0" prefHeight="25.0" prefWidth="53.0" />
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="360.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="830.0">
+               <effect>
+                  <DropShadow height="38.59" offsetY="3.0" radius="19.527500000000003" width="41.52">
+                     <color>
+                        <Color opacity="0.08396945893764496" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="360.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="830.0" />
+            <JFXTextField fx:id="txtName" focusColor="#ffb43c" layoutX="79.0" layoutY="96.0" prefHeight="25.0" prefWidth="355.0" promptText="Name *">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <Text layoutX="51.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID |">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="lblCustomerId" layoutX="178.0" layoutY="37.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.8530805687203791" startX="0.40284360189573465" startY="0.037914691943127965">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.886274516582489" green="0.47843137383461" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.886274516582489" green="0.47843137383461" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.7058823704719543" blue="0.23529411852359772" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <JFXTextField fx:id="txtAddress" focusColor="#ffb43c" layoutX="79.0" layoutY="156.0" prefHeight="25.0" prefWidth="355.0" promptText="Address">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtContactNumber" focusColor="#ffb43c" layoutX="79.0" layoutY="216.0" prefHeight="25.0" prefWidth="355.0" promptText="Contact Number *">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmbTitle" focusColor="#ffb43c" layoutX="472.0" layoutY="96.0" prefHeight="31.0" prefWidth="228.0" promptText="Title *" />
+            <DatePicker fx:id="dateDateOfBirth" layoutX="472.0" layoutY="160.0" prefHeight="31.0" prefWidth="228.0" promptText="Birth of Date">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </DatePicker>
+            <JFXButton layoutX="512.0" layoutY="289.0" onAction="#btnAddCustomerOnAction" prefHeight="31.0" prefWidth="228.0" style="-fx-background-color: #ffb43c; -fx-background-radius: 10;" text="Add Customer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
